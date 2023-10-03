@@ -332,6 +332,10 @@ Media querie Movil */
 @media (max-width:580px){
   @media (max-width: 590px) 
   {
+    .container-fluid {
+      justify-content: center;
+      align-items: center;
+    }
     main{
       height: auto;
     }
@@ -346,6 +350,8 @@ Media querie Movil */
     }
     .productos{
       height: auto;
+      padding: 20px;
+      row-gap: 10px;
     }
     .productos-container {
       flex-direction: column; 
