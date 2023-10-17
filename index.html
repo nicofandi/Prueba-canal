@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TodoMascotas.com</title>
+    <meta name="description" content="Lo mejor para tu mascota, encontra alimento, juguetes, ropa y todo lo que tu mascota necesite">
+    <meta name="keywords"  content="petshop, juguetes, blanceado, raza, royal, Excellent">
+    <title>HOME| TodoMascotas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>    
-        <link rel="stylesheet" href="css/styles.css"> 
+        <link rel="stylesheet" href="./scss/style.css"> 
 </head>
 
-<body background= "IMG/bgmain.jpg">
+<body background= "img/bgmain.jpg">
     <header class="header">
             <nav class="navbar navbar-expand-lg bg-#bacccd">
                 <div class="container-fluid">
-                    <img src="/IMG/Logo2.png" alt="logo.img">
+                    <img src="./img/logo2.png" alt="logo2">
                     <a class="navbar-brand"  href="#">Todo Mascotas</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,13 +31,16 @@
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/Pages/contactos.html">Contacto</a>
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                             <li class="nav-item">
-                                <a class="nav-link" href="/Pages/Registrarse.html">Registrarse</a>
+                                <a class="nav-link" href="./pages/Registrarse.html">Registrarse</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/Pages/DondeEncontrarnos.html">Donde encontrarnos</a>
-                            </li>    
+                                <a class="nav-link" href="./pages/DondeEncontrarnos.html">Donde encontrarnos</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/Productos.html">Productos</a>
+                            </li>   
                         </ul>
                     </div>
                 </div>
@@ -47,57 +52,69 @@
                 <h3>Alimento para perros</h3>
             </div>
             <div class="productos">
-                <div class="tarjeta" id="raza"><img src="/IMG/RAZA.png" alt="Raza adultos">
+                <div class="tarjeta" id="raza"><img src="./img/RAZA.png" alt="Raza adultos">
                     <p>RAZA ADULTOS 21KG</p>
-                    <p>21.000$</p>
+                    <div class="precio">
+                        <p>21.000$</p>
+                    </div>
                     <button>Comprar</button>
                 </div>
-                <div class="tarjeta" id="royal"><img src="/IMG/ROYAL.png" alt="Royal adultos">
+                <div class="tarjeta" id="royal"><img src="./img/ROYAL.png" alt="Royal adultos">
                     <p>ROYAL CANIN ADULTOS 21KG</p>
-                    <p>19.589$</p>
+                    <div class="precio">
+                        <p>19.589$</p>
+                    </div>
                     <button>Comprar</button>
                 </div>
-                <div class="tarjeta" id="euka"><img src="/IMG/EUKANUBA.png" alt="EUKANUBA">
-                    <p>EUKANUBA ADULTOS 21KG</p><span>
+                <div class="tarjeta" id="euka"><img src="./img/EUKANUBA.png" alt="EUKANUBA">
+                    <p>EUKANUBA ADULTOS 21KG</p>
+                    <div class="precio">
                         <p>24.500$</p>
-                    </span>
+                    </div>
                     <button>Comprar</button>
                 </div>
-                <div class="tarjeta" id="excell"><img src="/IMG/EXCELENT.png" alt="EXCELENT">
-                    <p>EXCELENT ADULTOS 21KG</p><span>
+                <div class="tarjeta" id="excell"><img src="./img/EXCELENT.png" alt="EXCELENT">
+                    <p>EXCELENT ADULTOS 21KG</p>
+                    <div class="precio">
                         <p>22.400$</p>
-                    </span>
+                    </div>
                     <button>Comprar</button>
                 </div>
             </div>
             </section>
             <section class="cuerpo">
             <div class="titulo">
-                <h4>Alimento para gatos</h4>
+                <h3>Alimento para gatos</h4>
             </div>
                 <div class="productos">
-                    <div class="tarjeta" id="excellgato"><img src="/IMG/EXCELENT-GATO.png" alt="Excellent Gato">
-                        <p>EXCELENT GATO ADULTO 15KG</p><span>
+                    <div class="tarjeta" id="excellgato"><img src="./img/EXCELENT-GATO.png" alt="Excellent Gato">
+                        <p>EXCELENT GATO ADULTO 15KG</p>
+                        <div class="precio">
                             <p class="oferta">$48.900</p>
                             <p>$41.500</p>
-                        </span>
+                        </div>
                         <button>Comprar</button>
                     </div>
-                    <div class="tarjeta" id="premium"><img src="/IMG/PREMIUM-VITAL.png" alt="Premium Gato">
-                        <p>PREMIUM GATO SAFETY PACK 24KG</p><span></span>
-                        <p class="oferta">$32.000</p>
-                        <P>$30.000</P>
+                    <div class="tarjeta" id="premium"><img src="./img/PREMIUM-VITAL.png" alt="Premium Gato">
+                        <p>PREMIUM GATO SAFETY PACK 24KG</p>
+                        <div class="precio">
+                            <p class="oferta">$32.000</p>
+                            <p>$30.000</p>
+                        </div>
                         <button>Comprar</button>
                     </div>
-                    <div class="tarjeta" id="proplan"><img src="/IMG/PRO-PLAN.png" alt="Pro Plan Gato Adulto">
-                        <p>PRO PLAN GATO ADULTO 7,5KG</p><span>
+                    <div class="tarjeta" id="proplan"><img src="./img/PRO-PLAN.png" alt="Pro Plan Gato Adulto">
+                        <p>PRO PLAN GATO ADULTO 7,5KG</p>
+                        <div class="precio">
                             <p>30.200$</p>
-                        </span>
+                        </div>
                         <button>Comprar</button>
                     </div>
-                    <div class="tarjeta" id="catchow"><img src="/IMG/CAT-CHOW.png" alt="Cat Chow">
+                    <div class="tarjeta" id="catchow"><img src="./img/CAT-CHOW.png" alt="Cat Chow">
                         <p>CAT CHOW ADULTOS 15KG</p>
+                        <div class="precio">
                             <p>24.000$</p>
+                        </div>
                             <button>Comprar</button>
                     </div>
                 </div>
@@ -115,7 +132,7 @@
                     </div>
                 </div>
                 <div class="textomedio">
-                    <p>Contacto</p>
+                    <a href="./pages/contacto.html">Contacto</a>
                 </div>
                 <div class="textoder">
                     <p>Facebook</p>
